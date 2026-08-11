@@ -23,12 +23,12 @@
     <a class="brand" href="#top">Keerthana&nbsp;Chirumamilla<span class="brand-dot">.</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="#now">Now</a>
+      <a href="#news">News</a>
       <a href="#experience">Experience</a>
       <a href="#feature">Featured</a>
       <a href="#projects">Projects</a>
       <a href="#honors">Honors</a>
       <a href="#leadership">Leadership</a>
-      <a href="#journey">Journey</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -60,7 +60,7 @@
           </span>
         </div>
       </div>
-      <!-- EDIT: replace assets/img/placeholder.svg with your own portrait photo -->
+      <!-- EDIT: replace assets/img/placeholder.svg with your own portrait photo — this is the one photo on the whole page, so make it count -->
       <figure class="hero-portrait reveal"><img src="assets/img/placeholder.svg" alt="Keerthana Chirumamilla" class="gimg"></figure>
     </div>
     <a href="#now" class="scroll-cue" aria-label="Scroll down"></a>
@@ -68,32 +68,47 @@
 
   <!-- NOW -->
   <section class="section" id="now">
-    <div class="wrap now-wrap">
-      <div class="now-grid">
-        <div class="now-col reveal">
-          <div class="sec-head">
-            <span class="sec-label">(01) — Now</span>
-            <h2 class="sec-title">[Your one-line positioning statement.]</h2>
-          </div>
-          <!-- EDIT: 2-3 bullets about what you're currently focused on -->
-          <ul class="now-points">
-            <li>[What you're currently working on — courses, research, side projects.]</li>
-            <li>[A role, position, or responsibility you hold right now.]</li>
-            <li>[Something you built or are building that you're proud of.]</li>
-          </ul>
-          <p class="now-note now-seeking">[EDIT: what are you looking for — internships, full-time roles, collaborators?]</p>
-          <p class="now-note now-reach">Always excited to meet new people and learn new things. <a href="#contact">Please feel free to reach out!</a></p>
+    <div class="wrap exp-wrap">
+      <div class="now-col reveal">
+        <div class="sec-head">
+          <span class="sec-label">(01) — Now</span>
+          <h2 class="sec-title">[Your one-line positioning statement.]</h2>
         </div>
-        <!-- EDIT: replace with your own photo -->
-        <figure class="now-portrait reveal"><img src="assets/img/placeholder.svg" alt="Keerthana Chirumamilla" class="gimg"></figure>
+        <!-- EDIT: 2-3 bullets about what you're currently focused on -->
+        <ul class="now-points">
+          <li>[What you're currently working on — courses, research, side projects.]</li>
+          <li>[A role, position, or responsibility you hold right now.]</li>
+          <li>[Something you built or are building that you're proud of.]</li>
+        </ul>
+        <p class="now-note now-seeking">[EDIT: what are you looking for — internships, full-time roles, collaborators?]</p>
+        <p class="now-note now-reach">Always excited to meet new people and learn new things. <a href="#contact">Please feel free to reach out!</a></p>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section alt" id="experience">
+  <!-- NEWS -->
+  <section class="section alt" id="news">
     <div class="wrap exp-wrap">
-      <div class="sec-head reveal"><span class="sec-label">(02) — Experience</span><h2 class="sec-title">Where I've <em>worked.</em></h2></div>
+      <div class="sec-head reveal"><span class="sec-label">(02) — News</span><h2 class="sec-title">Recent <em>updates.</em></h2></div>
+      <!-- EDIT: your news items, most recent first -->
+      <ul class="news-list reveal">
+        <li><span class="news-when">[YYYY-MM]</span><span class="news-what">[News item — an internship start, an award, a launch.]</span></li>
+        <li><span class="news-when">[YYYY-MM]</span><span class="news-what">[News item.]</span></li>
+        <li><span class="news-when">[YYYY-MM]</span><span class="news-what">[News item.]</span></li>
+      </ul>
+      <button class="show-more-toggle" type="button" data-target="news-old">···· show more ····</button>
+      <ul class="news-list" id="news-old" hidden>
+        <li><span class="news-when">[YYYY-MM]</span><span class="news-what">[Older news item.]</span></li>
+        <li><span class="news-when">[YYYY-MM]</span><span class="news-what">[Older news item.]</span></li>
+        <li><span class="news-when">[YYYY-MM]</span><span class="news-what">[Older news item.]</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap exp-wrap">
+      <div class="sec-head reveal"><span class="sec-label">(03) — Experience</span><h2 class="sec-title">Where I've <em>worked.</em></h2></div>
       <div class="timeline">
         <!-- EDIT: duplicate this article block for each role, most recent first -->
         <article class="tl-item reveal">
@@ -140,12 +155,10 @@
   <section class="section dark feature" id="feature">
     <div class="wrap">
       <div class="feature-head reveal">
-        <span class="sec-label light">(03) — Featured</span>
+        <span class="sec-label light">(04) — Featured</span>
         <h2 class="feature-title"><em>[Project name.]</em></h2>
         <p class="feature-sub">[EDIT: a strong 2-3 sentence description of your most significant project, startup, or achievement — the thing you want people to see first.]</p>
       </div>
-      <!-- EDIT: replace with real screenshots/photos of the work -->
-      <div class="naami-visual reveal"><figure><img src="assets/img/placeholder.svg" alt="" class="gimg"></figure><figure><img src="assets/img/placeholder.svg" alt="" class="gimg"></figure></div>
       <div class="naami-stats reveal">
         <div><b>[#]</b><span>[metric label]</span></div>
         <div><b>[#]</b><span>[metric label]</span></div>
@@ -161,152 +174,76 @@
   <!-- PROJECTS & RESEARCH -->
   <section class="section" id="projects">
     <div class="wrap exp-wrap">
-      <div class="sec-head reveal"><span class="sec-label">(04) — Projects &amp; Research</span><h2 class="sec-title">Projects and <em>papers.</em></h2></div>
-      <div class="proj-grid">
-        <!-- EDIT: duplicate this article block for each project. Drop an image at assets/img/proj-N.jpg (or .png/.mp4) and it'll show automatically; leave it missing and it shows a clean "add image" placeholder. -->
-        <article class="proj reveal">
+      <div class="sec-head reveal"><span class="sec-label">(05) — Projects &amp; Research</span><h2 class="sec-title">Projects and <em>papers.</em></h2></div>
+      <div class="proj-list">
+        <!-- EDIT: duplicate this row for each project. Drop an image at assets/img/proj-N.jpg (or .png/.mp4) and it'll show automatically; leave it missing and it shows a clean "add image" placeholder. -->
+        <article class="proj-row reveal">
           <div class="proj-media"><img src="assets/img/proj-1.jpg" data-base="assets/img/proj-1" alt="" class="gimg pmedia"></div>
           <div class="proj-body">
-            <span class="proj-idx">01</span>
             <h3>[Project Title]</h3>
             <p class="proj-meta">[Category · Where/When]</p>
             <p class="proj-desc">[One or two sentences on what this project is and why it's interesting.]</p>
             <div class="tags"><span>Tech</span><span>Tech</span><span>Tech</span></div>
-            <div class="proj-actions">
-              <button class="btn-detail" type="button">Full detail →</button>
+            <button class="show-more-toggle" type="button" data-target="proj-1-detail">···· show more ····</button>
+            <div class="proj-detail" id="proj-1-detail" hidden>
+              <ul class="dt-list">
+                <li>[Detail point one.]</li>
+                <li>[Detail point two.]</li>
+                <li>[Detail point three.]</li>
+              </ul>
             </div>
           </div>
-          <template class="proj-detail">
-            <p class="dt-meta">[Category · Where/When]</p>
-            <h3>[Project Title]</h3>
-            <p class="dt-lead">[Expanded one-line summary.]</p>
-            <ul class="dt-list">
-              <li>[Detail point one.]</li>
-              <li>[Detail point two.]</li>
-              <li>[Detail point three.]</li>
-            </ul>
-            <div class="tags"><span>Tech</span><span>Tech</span><span>Tech</span></div>
-          </template>
         </article>
 
-        <article class="proj reveal">
+        <article class="proj-row reveal">
           <div class="proj-media"><img src="assets/img/proj-2.jpg" data-base="assets/img/proj-2" alt="" class="gimg pmedia"></div>
           <div class="proj-body">
-            <span class="proj-idx">02</span>
             <h3>[Project Title]</h3>
             <p class="proj-meta">[Category · Where/When]</p>
             <p class="proj-desc">[One or two sentences on what this project is.]</p>
             <div class="tags"><span>Tech</span><span>Tech</span></div>
-            <div class="proj-actions">
-              <button class="btn-detail" type="button">Full detail →</button>
+            <button class="show-more-toggle" type="button" data-target="proj-2-detail">···· show more ····</button>
+            <div class="proj-detail" id="proj-2-detail" hidden>
+              <ul class="dt-list">
+                <li>[Detail point one.]</li>
+                <li>[Detail point two.]</li>
+              </ul>
             </div>
           </div>
-          <template class="proj-detail">
-            <p class="dt-meta">[Category · Where/When]</p>
-            <h3>[Project Title]</h3>
-            <p class="dt-lead">[Expanded summary.]</p>
-            <ul class="dt-list">
-              <li>[Detail point one.]</li>
-              <li>[Detail point two.]</li>
-            </ul>
-            <div class="tags"><span>Tech</span><span>Tech</span></div>
-          </template>
         </article>
 
-        <article class="proj reveal">
+        <article class="proj-row reveal">
           <div class="proj-media"><img src="assets/img/proj-3.jpg" data-base="assets/img/proj-3" alt="" class="gimg pmedia"></div>
           <div class="proj-body">
-            <span class="proj-idx">03</span>
             <h3>[Project Title]</h3>
             <p class="proj-meta">[Category · Where/When]</p>
             <p class="proj-desc">[One or two sentences on what this project is.]</p>
             <div class="tags"><span>Tech</span><span>Tech</span></div>
-            <div class="proj-actions">
-              <button class="btn-detail" type="button">Full detail →</button>
+            <button class="show-more-toggle" type="button" data-target="proj-3-detail">···· show more ····</button>
+            <div class="proj-detail" id="proj-3-detail" hidden>
+              <ul class="dt-list">
+                <li>[Detail point one.]</li>
+                <li>[Detail point two.]</li>
+              </ul>
             </div>
           </div>
-          <template class="proj-detail">
-            <p class="dt-meta">[Category · Where/When]</p>
-            <h3>[Project Title]</h3>
-            <p class="dt-lead">[Expanded summary.]</p>
-            <ul class="dt-list">
-              <li>[Detail point one.]</li>
-              <li>[Detail point two.]</li>
-            </ul>
-            <div class="tags"><span>Tech</span><span>Tech</span></div>
-          </template>
         </article>
 
-        <article class="proj reveal">
+        <article class="proj-row reveal">
           <div class="proj-media"><img src="assets/img/proj-4.jpg" data-base="assets/img/proj-4" alt="" class="gimg pmedia"></div>
           <div class="proj-body">
-            <span class="proj-idx">04</span>
             <h3>[Project Title]</h3>
             <p class="proj-meta">[Category · Where/When]</p>
             <p class="proj-desc">[One or two sentences on what this project is.]</p>
             <div class="tags"><span>Tech</span><span>Tech</span></div>
-            <div class="proj-actions">
-              <button class="btn-detail" type="button">Full detail →</button>
+            <button class="show-more-toggle" type="button" data-target="proj-4-detail">···· show more ····</button>
+            <div class="proj-detail" id="proj-4-detail" hidden>
+              <ul class="dt-list">
+                <li>[Detail point one.]</li>
+                <li>[Detail point two.]</li>
+              </ul>
             </div>
           </div>
-          <template class="proj-detail">
-            <p class="dt-meta">[Category · Where/When]</p>
-            <h3>[Project Title]</h3>
-            <p class="dt-lead">[Expanded summary.]</p>
-            <ul class="dt-list">
-              <li>[Detail point one.]</li>
-              <li>[Detail point two.]</li>
-            </ul>
-            <div class="tags"><span>Tech</span><span>Tech</span></div>
-          </template>
-        </article>
-
-        <article class="proj reveal">
-          <div class="proj-media"><img src="assets/img/proj-5.jpg" data-base="assets/img/proj-5" alt="" class="gimg pmedia"></div>
-          <div class="proj-body">
-            <span class="proj-idx">05</span>
-            <h3>[Project Title]</h3>
-            <p class="proj-meta">[Category · Where/When]</p>
-            <p class="proj-desc">[One or two sentences on what this project is.]</p>
-            <div class="tags"><span>Tech</span><span>Tech</span></div>
-            <div class="proj-actions">
-              <button class="btn-detail" type="button">Full detail →</button>
-            </div>
-          </div>
-          <template class="proj-detail">
-            <p class="dt-meta">[Category · Where/When]</p>
-            <h3>[Project Title]</h3>
-            <p class="dt-lead">[Expanded summary.]</p>
-            <ul class="dt-list">
-              <li>[Detail point one.]</li>
-              <li>[Detail point two.]</li>
-            </ul>
-            <div class="tags"><span>Tech</span><span>Tech</span></div>
-          </template>
-        </article>
-
-        <article class="proj reveal">
-          <div class="proj-media"><img src="assets/img/proj-6.jpg" data-base="assets/img/proj-6" alt="" class="gimg pmedia"></div>
-          <div class="proj-body">
-            <span class="proj-idx">06</span>
-            <h3>[Project Title]</h3>
-            <p class="proj-meta">[Category · Where/When]</p>
-            <p class="proj-desc">[One or two sentences on what this project is.]</p>
-            <div class="tags"><span>Tech</span><span>Tech</span></div>
-            <div class="proj-actions">
-              <button class="btn-detail" type="button">Full detail →</button>
-            </div>
-          </div>
-          <template class="proj-detail">
-            <p class="dt-meta">[Category · Where/When]</p>
-            <h3>[Project Title]</h3>
-            <p class="dt-lead">[Expanded summary.]</p>
-            <ul class="dt-list">
-              <li>[Detail point one.]</li>
-              <li>[Detail point two.]</li>
-            </ul>
-            <div class="tags"><span>Tech</span><span>Tech</span></div>
-          </template>
         </article>
       </div>
 
@@ -323,7 +260,7 @@
   <!-- HONORS & AWARDS -->
   <section class="section alt" id="honors">
     <div class="wrap exp-wrap">
-      <div class="sec-head reveal"><span class="sec-label">(05) — Honors &amp; Awards</span><h2 class="sec-title">Recognition.</h2></div>
+      <div class="sec-head reveal"><span class="sec-label">(06) — Honors &amp; Awards</span><h2 class="sec-title">Recognition.</h2></div>
       <div class="awards-grid">
         <div class="awardcol reveal">
           <h4>Competitions</h4>
@@ -346,65 +283,40 @@
   <!-- LEADERSHIP — use this for a club, society, or community you've led/built -->
   <section class="section" id="leadership">
     <div class="wrap exp-wrap">
-      <div class="sec-head reveal"><span class="sec-label">(06) — Leadership &amp; Community</span><h2 class="sec-title">[Org/Club Name.]</h2></div>
-      <div class="aims-grid">
-        <!-- EDIT: replace with your own photo -->
-        <figure class="aims-photo reveal"><img src="assets/img/placeholder.svg" alt="Team photo" class="gimg"></figure>
-        <div class="aims-body reveal">
-          <p class="aims-lead">[EDIT: a strong opening line about why you started or joined this.]</p>
-          <p>[EDIT: 2-3 sentences describing the organization, your role, and its growth.]</p>
-          <ul class="aims-points">
-            <li>[Reach or scale metric.]</li>
-            <li>[A concrete initiative you ran.]</li>
-            <li>[An outcome or result.]</li>
-          </ul>
-          <div class="aims-stats">
-            <div><b><span class="count" data-count="0" data-suffix="+">0</span></b><span>[metric]</span></div>
-            <div><b>[X yrs]</b><span>[role]</span></div>
-            <div><b>[Role]</b><span>[since]</span></div>
-          </div>
+      <div class="sec-head reveal"><span class="sec-label">(07) — Leadership &amp; Community</span><h2 class="sec-title">[Org/Club Name.]</h2></div>
+      <div class="aims-body reveal">
+        <p class="aims-lead">[EDIT: a strong opening line about why you started or joined this.]</p>
+        <p>[EDIT: 2-3 sentences describing the organization, your role, and its growth.]</p>
+        <ul class="aims-points">
+          <li>[Reach or scale metric.]</li>
+          <li>[A concrete initiative you ran.]</li>
+          <li>[An outcome or result.]</li>
+        </ul>
+        <div class="aims-stats">
+          <div><b><span class="count" data-count="0" data-suffix="+">0</span></b><span>[metric]</span></div>
+          <div><b>[X yrs]</b><span>[role]</span></div>
+          <div><b>[Role]</b><span>[since]</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- JOURNEY -->
-  <section class="section alt" id="journey">
-    <div class="wrap exp-wrap">
-      <div class="sec-head reveal"><span class="sec-label">(07) — Journey</span><h2 class="sec-title">The rest of it.</h2><p class="sec-sub">Some of the moments behind the r&eacute;sum&eacute; lines.</p></div>
-      <!-- EDIT: replace with your own photos and captions -->
-      <div class="gallery reveal">
-        <a class="gal-item" href="#honors"><img src="assets/img/placeholder.svg" alt="" class="gimg"><span class="gal-cap"><b>[Headline]</b>[Detail]</span></a>
-        <a class="gal-item" href="#honors"><img src="assets/img/placeholder.svg" alt="" class="gimg"><span class="gal-cap"><b>[Headline]</b>[Detail]</span></a>
-        <a class="gal-item" href="#experience"><img src="assets/img/placeholder.svg" alt="" class="gimg"><span class="gal-cap"><b>[Headline]</b>[Detail]</span></a>
-        <a class="gal-item" href="#honors"><img src="assets/img/placeholder.svg" alt="" class="gimg"><span class="gal-cap"><b>[Headline]</b>[Detail]</span></a>
-      </div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
-  <section class="section dark contact" id="contact">
+  <section class="section alt contact" id="contact">
     <div class="wrap">
-      <div class="sec-head reveal center"><span class="sec-label light">(08) — Contact</span><h2 class="feature-title">Let's build <em>something.</em></h2><p class="feature-sub">[EDIT: what kind of conversations are you open to?]</p></div>
+      <div class="sec-head reveal center"><span class="sec-label">(08) — Contact</span><h2 class="feature-title">Let's build <em>something.</em></h2><p class="sec-sub">[EDIT: what kind of conversations are you open to?]</p></div>
       <div class="contact-links reveal">
         <a href="mailto:keerthana.chirumamilla1@gmail.com" class="btn btn-primary magnetic">Email me</a>
         <a href="https://linkedin.com/in/keerthana-c-a5724222a" target="_blank" rel="noopener" class="link-chev">LinkedIn</a>
         <a href="https://github.com/mbh1234" target="_blank" rel="noopener" class="link-chev">GitHub</a>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="footer footer-light">
       <span>© <span id="year">2026</span> Keerthana Chirumamilla</span>
       <span>Designed &amp; built from scratch</span>
     </footer>
   </section>
 
-
-  <div class="modal" id="projModal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true">
-      <button class="modal-x" id="modalX" aria-label="Close">✕</button>
-      <div class="modal-body" id="modalBody"></div>
-    </div>
-  </div>
 </main>
 
 <script src="js/main.js"></script>

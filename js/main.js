@@ -126,28 +126,16 @@
   document.querySelectorAll('video[data-src]').forEach(v => lazyVideo.observe(v));
 
 
-  // ---- project detail modal ----
-  const modal = document.getElementById('projModal');
-  const modalBody = document.getElementById('modalBody');
-  function openDetail(card) {
-    const tpl = card.querySelector('template.proj-detail');
-    if (!tpl || !modal) return;
-    modalBody.innerHTML = '';
-    modalBody.appendChild(tpl.content.cloneNode(true));
-    modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeDetail() {
-    if (!modal) return;
-    modal.classList.remove('open'); modal.setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
-  }
-  document.querySelectorAll('.btn-detail').forEach(b => {
-    b.addEventListener('click', e => { e.stopPropagation(); openDetail(b.closest('.proj')); });
+  // ---- inline show-more toggles: project detail, older news, extended bio, etc. ----
+  document.querySelectorAll('.show-more-toggle').forEach(btn => {
+    const target = document.getElementById(btn.dataset.target);
+    if (!target) return;
+    btn.addEventListener('click', () => {
+      const willShow = target.hidden;
+      target.hidden = !willShow;
+      btn.textContent = willShow ? '···· show less ····' : '···· show more ····';
+    });
   });
-  document.getElementById('modalX')?.addEventListener('click', closeDetail);
-  modal?.addEventListener('click', e => { if (e.target === modal) closeDetail(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
 
   console.log('%cKeerthana Chirumamilla', 'font:600 22px "Space Grotesk",sans-serif');
 })();
